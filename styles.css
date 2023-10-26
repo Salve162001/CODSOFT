@@ -1,100 +1,99 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, p {
+/* Reset some default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Global styles */
+/* Set background color and text color for the body */
 body {
+    background-color: #f0f0f0;
+    color: #333;
     font-family: Arial, sans-serif;
 }
 
+/* Header styling */
 header {
-    background: #333;
+    background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    text-align: center;
+    padding: 20px;
 }
 
-nav ul {
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* About Section styling */
+#about {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#about img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Skills Section styling */
+#skills {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+#skills ul {
     list-style: none;
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    background: #f2f2f2;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.hero h1 {
-    font-size: 36px;
-}
-
-.cta-button {
+#skills li {
     display: inline-block;
-    padding: 10px 20px;
-    background: #333;
-    color: #fff;
-    text-decoration: none;
-    margin-top: 20px;
+    margin: 10px;
 }
 
-.products {
-    background: #fff;
-    padding: 50px 0;
-    text-align: center;
+/* Projects Section styling */
+#projects {
+    background-color: #fff;
+    padding: 20px;
 }
 
-.product {
-    margin: 20px;
+.project {
+    margin: 20px 0;
 }
 
-.product img {
+.project h3 {
+    font-size: 1.5rem;
+}
+
+.project img {
     max-width: 100%;
 }
 
-.about-us {
-    background: #f2f2f2;
-    padding: 50px 0;
+/* Resume Section styling */
+#resume {
+    background-color: #f0f0f0;
+    padding: 20px;
     text-align: center;
 }
 
-.contact {
-    background: #fff;
-    padding: 50px 0;
+/* Contact Section styling */
+#contact {
+    background-color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
+/* Footer styling */
 footer {
-    background: #333;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
 }
 
-.scrolling-container {
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.scrolling-container img {
-    animation: scroll 10s linear infinite; /* Adjust duration as needed */
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(100%); /* Adjust initial position for the effect */
-    }
-    100% {
-        transform: translateX(-100%); /* Adjust the distance for the scroll effect */
-    }
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
 }
